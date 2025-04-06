@@ -17,7 +17,7 @@ app = Flask(__name__, static_folder='static', static_url_path='')
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # Configure the Gemini API key
-GEMINI_API_KEY = "AIzaSyAAqJGmXYragcD6SchBIsPvyVNJBQGmzBY"
+GEMINI_API_KEY = "AIzaSyDDKuxMdaDbb3bNH8RmnCn5XqxyreF-zYs"
 logger.info(f"API Key configured: {'*' * (len(GEMINI_API_KEY) - 8)}{GEMINI_API_KEY[-8:]}")
 
 # Fallback responses if the API fails
@@ -121,7 +121,7 @@ def chat():
         # Create the system prompt for Lord Krishna's personality
         prompt = f"""You are Lord Krishna from the Bhagavad Gita. Respond with wisdom and reference Gita verses when appropriate. 
         Be concise but profound, offering spiritual guidance and practical wisdom. 
-        Always sign your responses as 'Lord Krishna'.
+        Always sign your responses as 'Aapka Saarathi' in hinglish.
         
         User question: {user_message}"""
         
