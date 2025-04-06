@@ -2,11 +2,17 @@
 
 A simple web-based chatbot that lets you seek wisdom from Lord Krishna based on the teachings of the Bhagavad Gita, powered by Google's Gemini AI.
 
+## Screenshot
+
+![GitaAI Interface Screenshot](static/ss.png)
+
 ## Features
 
 - Chat-like interface for asking questions to Lord Krishna
 - Responses based on the teachings of the Bhagavad Gita
 - Responsive design that works on desktop and mobile
+- Beautiful transparent interface with backdrop blur effects
+- Rotating spiritual quotes from the Bhagavad Gita
 - Fallback responses in case of API issues
 
 ## Requirements
@@ -43,6 +49,25 @@ http://localhost:5000
 ```
 
 3. Start asking questions to Lord Krishna!
+
+## Deployment
+
+You can deploy this application on several platforms:
+
+### Render (Free & Easy)
+1. Create an account on [Render](https://render.com/)
+2. Create a new Web Service and connect your GitHub repository
+3. Set the build command: `pip install -r requirements.txt`
+4. Set the start command: `python gitaai.py`
+5. Add your Gemini API key as an environment variable
+
+### Heroku
+1. Create a Procfile with: `web: python gitaai.py`
+2. Update code to use environment port: `port = int(os.environ.get("PORT", 5000))`
+3. Deploy using Heroku CLI or GitHub integration
+
+### Railway or PythonAnywhere
+These platforms also offer simple deployment options for Python applications.
 
 ## How It Works
 
