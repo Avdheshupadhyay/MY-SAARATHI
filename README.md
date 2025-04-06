@@ -52,23 +52,9 @@ http://localhost:5000
 
 ## Deployment
 
-You can deploy this application on several platforms:
-
-### Render (Free & Easy)
-1. Create an account on [Render](https://render.com/)
-2. Create a new Web Service and connect your GitHub repository
-3. Set the build command: `pip install -r requirements.txt`
-4. Set the start command: `python gitaai.py`
-5. Add your Gemini API key as an environment variable
-
-### Heroku
-1. Create a Procfile with: `web: python gitaai.py`
-2. Update code to use environment port: `port = int(os.environ.get("PORT", 5000))`
-3. Deploy using Heroku CLI or GitHub integration
-
 ### Railway or PythonAnywhere
 These platforms also offer simple deployment options for Python applications.
-
+Live demo:[click here](gitaai-production.up.railway.app)
 ## How It Works
 
 - The frontend is built with HTML, CSS, and JavaScript.
